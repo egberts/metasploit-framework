@@ -53,7 +53,7 @@ Gem::Specification.new do |spec|
   # Backports Ruby features across language versions
   spec.add_runtime_dependency 'backports'
   # Needed for some admin modules (cfme_manageiq_evm_pass_reset.rb)
-  spec.add_runtime_dependency 'bcrypt'
+  spec.add_runtime_dependency 'bcrypt', '3.1.12'
   # Needed for Javascript obfuscation
   spec.add_runtime_dependency 'jsobfu'
   # Needed for some admin modules (scrutinizer_add_user.rb)
@@ -70,7 +70,7 @@ Gem::Specification.new do |spec|
   # are needed when there's no database
   spec.add_runtime_dependency 'metasploit-model'
   # Needed for Meterpreter
-  spec.add_runtime_dependency 'metasploit-payloads', '1.3.70'
+  spec.add_runtime_dependency 'metasploit-payloads', '1.3.78'
   # Needed for the next-generation POSIX Meterpreter
   spec.add_runtime_dependency 'metasploit_payloads-mettle', '0.5.16'
   # Needed by msfgui and other rpc components
@@ -167,7 +167,7 @@ Gem::Specification.new do |spec|
   # Library for parsing and manipulating executable binaries
   spec.add_runtime_dependency 'rex-bin_tools'
   # Rex Socket Abstraction Layer
-  spec.add_runtime_dependency 'rex-socket', '0.1.17'
+  spec.add_runtime_dependency 'rex-socket'
   # Library for scanning a server's SSL/TLS capabilities
   spec.add_runtime_dependency 'rex-sslscan'
   # Library and tool for finding ROP gadgets in a supplied binary
